@@ -1,11 +1,13 @@
-import styles from './card.scss';
+import React from 'react';
+import './_card.scss';
+
 
 class Card extends React.Component {
     render() {
         console.log("This is the card component")
         return(
             <div className="card__container">
-                <div ClassName="card__body">
+                <div className="card__body">
                     
                 
                 </div>
@@ -13,3 +15,5 @@ class Card extends React.Component {
         )
     }
 }
+
+export default Card;
