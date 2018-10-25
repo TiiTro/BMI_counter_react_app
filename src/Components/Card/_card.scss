@@ -1,0 +1,13 @@
+.card {
+
+    &__container {
+      position: relative;
+      z-index: 1;
+      margin: 3rem;
+      width: .7vw;
+      height: .7vh;
+      perspective: 1000;
+      background-color: white;
+
+    }
+}
