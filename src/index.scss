@@ -1,3 +1,16 @@
+@import './Styles/base/typography';
+@import './Styles/base/animations';
+@import './Styles/base/utilities';
+@import './Styles/tools/functions';
+@import './Styles/tools/mixins';
+@import './Styles/tools/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*body {
   margin: 0;
   padding: 0;
