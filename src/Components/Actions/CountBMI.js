@@ -1,7 +1,9 @@
+
+
 function countBMI() {
     console.log('function BMI running');
-    let weight=getElementById('inputWeight');
-    let height=getElementById('inputHeight');
+    let weight=14;
+    let height=140;
 
     let BMI = weight/(height*height);
 

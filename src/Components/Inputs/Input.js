@@ -6,7 +6,7 @@ class Input extends React.Component {
     render() {
         return(
             <form>
-                <input className={this.props.className} type={this.props.type} name={this.props.name} id={this.props.id} placeholder={this.props.placeholder} required />
+                <input className={this.props.className} type={this.props.type} value={this.props.value} name={this.props.name} id={this.props.id} placeholder={this.props.placeholder} required />
             </form>
         )
     } 
