@@ -6,7 +6,7 @@ class Button extends React.Component {
         console.log('This is the button');
         return(
             <form>
-                <button className='btn' type={this.props.type} value={this.props.value}>Count</button>
+                <button id={this.props.id} className={this.props.className} type={this.props.type} onClick={this.props.onClick}>Count</button>
             </form>
         )
     }
