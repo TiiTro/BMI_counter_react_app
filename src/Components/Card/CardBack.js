@@ -8,7 +8,9 @@ class CardBack extends React.Component {
 
         return(
             <div>
-                <p>Your BMI is .....</p>
+                <p>Your BMI is</p>
+                <p>BMI here</p>
+                <p>You are...</p>
             </div>
         )
 

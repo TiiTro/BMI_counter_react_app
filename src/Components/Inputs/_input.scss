@@ -1,0 +1,14 @@
+.input {
+    box-sizing: border-box;
+    margin: .7rem;
+    height: 2.6rem;
+    width: 50%;
+    padding: .1rem .6rem;
+
+    &:focus {
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid #6DFF5D;
+        
+    }
+}

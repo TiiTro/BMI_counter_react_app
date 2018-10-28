@@ -4,11 +4,13 @@ import React from 'react';
 import Input from '../Inputs/Input.js';
 import Button from '../Inputs/Button.js';
 
+
+
 class CardFront extends React.Component {
     render() {
         console.log("This is the front side");
         return(
-            <div>
+            <div className='card__side-front'>
                 <h1 className="heading__big">Count your BMI</h1>
                 <Input name="inputWeight" id="inputWeight" type="number" placeholder="How much do you weight (in kg)?"/>
                 <Input name="inputHeight" id="inputHeight" type="number" placeholder="How tall are you (in cm)?"/>

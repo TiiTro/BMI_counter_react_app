@@ -1,5 +1,4 @@
 import React from 'react';
-import './_card.scss';
 import CardFront from './CardFront.js';
 import CardBack from './CardBack.js';
 

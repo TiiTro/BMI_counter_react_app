@@ -1,0 +1,17 @@
+
+.btn{
+    width: 50%;
+    height: 4rem;
+    margin-top: 1.5rem;
+    box-shadow: .2rem .2rem .5rem #87888C;
+
+
+    &:hover {
+        transform: scale(.95);
+        box-shadow: .25rem .25rem .5rem #87888C;
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+;}
