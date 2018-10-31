@@ -98,17 +98,23 @@ class CardFront extends React.Component {
     render() {
         console.log("This is the front side");
         return(
-            <div className='card__side-front'>
-                <form onSubmit={this.handleSubmit}> 
-                    <h1 className="heading__big">Count your BMI</h1>
-                    <input className='input' type='number' name="weight" onChange={this.handleWeight} placeholder="How much do you weight (in kg)?"></input>
-                    <br></br>
-                    <input className='input' type='number' name="height" onChange={this.handleHeight} placeholder="How tall are you (in cm)?"></input>
-                    <br></br>
-                    <Button className="btn btn__text" type="submit" value="Count"/>
-                </form>
+          <div>
+              <div className='card__side-front'>
+                  <form onSubmit={this.handleSubmit}> 
+                      <h1 className="heading__big">Count your BMI</h1>
+                      <input className='input' type='number' name="weight" onChange={this.handleWeight} placeholder="How much do you weight (in kg)?"></input>
+                      <br></br>
+                      <input className='input' type='number' name="height" onChange={this.handleHeight} placeholder="How tall are you (in cm)?"></input>
+                      <br></br>
+                      <Button className="btn btn__text" type="submit" value="Count"/>
+                  </form>
+              </div>
+              <div className='card__side-back'>
+                <p>Your BMI is</p>
+                <p>{this.state.bmi}</p>
+                <p>You are {this.state.message}</p>
+              </div>
             </div>
-            
         )
     }
 }

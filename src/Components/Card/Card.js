@@ -1,6 +1,6 @@
 import React from 'react';
 import CardFront from './CardFront.js';
-import CardBack from './CardBack.js';
+//import CardBack from './CardBack.js';
 
 
 class Card extends React.Component {
@@ -12,7 +12,7 @@ class Card extends React.Component {
                 <div className="card__body">
                     <CardFront />
 
-                    <CardBack />
+                
                     
                 
                 </div>
