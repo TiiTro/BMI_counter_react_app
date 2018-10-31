@@ -30,7 +30,7 @@ class CardFront extends React.Component {
                 <h1 className="heading__big">Count your BMI</h1>
                 <Input className="input" type="number" placeholder="How much do you weight (in kg)?" name="inputWeight" id="inputWeight" />
                 <Input className="input" name="inputHeight" id="inputHeight" type="number" placeholder="How tall are you (in cm)?"/>
-                <Button className="btn" id="btn_count" type="submit" />
+                <Button className="btn btn__text" id="btn_count" type="submit" />
             </form>
 
             

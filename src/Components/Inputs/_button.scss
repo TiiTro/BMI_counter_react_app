@@ -3,7 +3,9 @@
     width: 50%;
     height: 4rem;
     margin-top: 1.5rem;
+    background-image: radial-gradient(#21A612, #6DFF5D);
     box-shadow: .2rem .2rem .5rem #87888C;
+    color: #fff;
 
 
     &:hover {
@@ -14,4 +16,4 @@
     &:active {
         transform: scale(1.05);
     }
-;}
+};
