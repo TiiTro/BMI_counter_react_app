@@ -1,8 +1,9 @@
 /* react component for the front side of the card */
 
 import React from 'react';
-import Input from '../Inputs/Input.js';
 import Button from '../Inputs/Button.js';
+import '../Card/_card.scss';
+import '../Inputs/_input.scss';
 // import countBMI from '../Actions/CountBMI.js';
 
 class CardFront extends React.Component {
@@ -16,9 +17,11 @@ class CardFront extends React.Component {
           weight: '',
           height: '',
           bmi: '',
-          bmiClass: ''
+          bmiClass: '',
+          message: ''
         }
       }
+
     
       handleHeight(event) {
         console.log(event.target.value);
@@ -44,14 +47,13 @@ class CardFront extends React.Component {
       }
     
       BmiClass = (bmi) => {
+        this.setState = {message: ''}
         if(bmi < 15) {
-          return(
-            console.log('You are dangerously underweight')
-          )
+          this.setState({message: 'You are dangerously underweight'});
+          console.log('You are dangerously underweight'); 
         } if (bmi >= 15 && bmi < 17) {
-          return(
-            console.log('You are considerably underweight')
-          )
+          this.setState({message: 'You are considerably underweight'});
+          console.log('You are considerably underweight')
         } if (bmi >= 17 && bmi < 18.5) {
           return(
             console.log('You are slightly underweight')
@@ -91,6 +93,7 @@ class CardFront extends React.Component {
         console.log(this.state.height);
       }
     
+    
 
     render() {
         console.log("This is the front side");
@@ -98,9 +101,9 @@ class CardFront extends React.Component {
             <div className='card__side-front'>
                 <form onSubmit={this.handleSubmit}> 
                     <h1 className="heading__big">Count your BMI</h1>
-                    <Input className='input' type='number' name="weight" onChange={this.handleWeight} placeholder="How much do you weight (in kg)?"/>
+                    <input className='input' type='number' name="weight" onChange={this.handleWeight} placeholder="How much do you weight (in kg)?"></input>
                     <br></br>
-                    <Input className='input' type='number' name="height" onChange={this.handleHeight} placeholder="How tall are you (in cm)?"/>
+                    <input className='input' type='number' name="height" onChange={this.handleHeight} placeholder="How tall are you (in cm)?"></input>
                     <br></br>
                     <Button className="btn btn__text" type="submit" value="Count"/>
                 </form>

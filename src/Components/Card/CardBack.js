@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+
+
 class CardBack extends React.Component {
     render() {
         console.log("This is the back side");
@@ -9,7 +11,7 @@ class CardBack extends React.Component {
         return(
             <div>
                 <p>Your BMI is</p>
-                <p>BMI here</p>
+                <p></p>
                 <p>You are...</p>
             </div>
         )
