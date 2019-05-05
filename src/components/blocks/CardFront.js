@@ -1,9 +1,7 @@
-/* react component for the front side of the card */
-
 import React from 'react';
-import Button from '../Inputs/Button.js';
-import '../Card/_card.scss';
-import '../Inputs/_input.scss';
+import Button from '../snippets/Button';
+import '../../styles/blocks/_card.scss';
+import '../../styles/snippets/_input.scss';
 // import countBMI from '../Actions/CountBMI.js';
 
 class CardFront extends React.Component {
@@ -120,3 +118,32 @@ class CardFront extends React.Component {
 }
 
 export default CardFront;
+
+// switch(bmi) {
+//   case (bmi < 15):
+//      setMessage("You are dangerously underweight");
+//      break;
+//   case (bmi >= 15 && bmi < 17):
+//       setMessage("You are considerably underweight");
+//       break;
+//   case (bmi >= 17 && bmi < 18.5):
+//       setMessage("You are slightly underweight");
+//       break;
+//   case (bmi >= 18.5 && bmi < 25):
+//       setMessage("You are normalweight");
+//       break;
+//   case (bmi >= 25 && bmi < 30):
+//       setMessage("You are overweight");
+//       break;
+//   case (bmi >= 30 && bmi < 35):
+//       setMessage("You are obese");
+//       break;
+//   case (bmi >= 35 && bmi < 40):
+//       setMessage("You are considerably obese");
+//       break;
+//   case (bmi > 40):
+//       setMessage("You are severely obese");
+//       break;
+//   default:
+//       setMessage(" ");
+// }
