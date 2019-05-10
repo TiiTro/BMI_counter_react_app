@@ -44,9 +44,17 @@ export default function Card(props) {
 
     console.log(countedBmi);
     console.log(message);
-    
+
+    function reset(e) {
+      setHeight('');
+      setWeight('');
+      setMessage('');
+      console.log('running reset');
+    }
+
     return(
-        <div className="card__container">
+        <div classname="card">
+          <div className="card__container">
             <div className="card__body">
                 <form> 
                     <h1 className="heading__big">Count your BMI</h1>
@@ -74,13 +82,20 @@ export default function Card(props) {
                         onClick={handleClick}
                     />
                 </form>
-                <div>
-                    <p>Your weight is {weight}</p>
-                    <p>{height}</p>
-                    <p>{countedBmi}</p>
-                    <p>{message}</p>
-                </div>  
             </div>
+            { message && (
+              <div className={'card__result'}>
+                <p className={'card__result-text'}>Your body mass index is</p>
+                <p className={'card__result-weight'}>{countedBmi}</p>
+                <p className={'card__result-text'}>{message}</p>
+                <Button 
+                  className={'reset'}
+                  value={'Count again'}
+                  onClick={reset}
+                />
+              </div> 
+            )}
         </div>
+      </div>
     );
 }

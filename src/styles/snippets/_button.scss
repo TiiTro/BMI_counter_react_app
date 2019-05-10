@@ -1,20 +1,36 @@
 @import '../../styles/base/variables';
 
 .btn{
-    width: 50%;
+    width: 100%;
     height: 4rem;
-    margin-top: 1.5rem;
-    background-image: radial-gradient(#21A612, #6DFF5D);
-    box-shadow: .2rem .2rem .5rem #87888C;
+    margin-top: 1rem;
+    background-image: radial-gradient(#57cc4a, #6DFF5D);
+    box-shadow: .1rem .1rem .2rem $color-grey-middle;
     color: $color-white;
 
 
     &:hover {
-        transform: scale(.95);
-        box-shadow: .25rem .25rem .5rem #87888C;
+        transform: scale(.98);
+        box-shadow: .25rem .25rem .5rem rgba(97, 102, 102, .5)
     }
 
     &:active {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 };
+
+.reset {
+    color: $color-green;
+    text-decoration: underline;
+    background: none;border: none;
+
+    &:hover {
+        color: $color-green-dark;
+        cursor: pointer;
+        transform: scale(.98);
+    }
+   
+    &:active {
+        transform: scale(1.02);
+    }
+}
