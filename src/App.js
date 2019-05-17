@@ -8,6 +8,5 @@ export default function App(props) {
     <div>
       <Card />
     </div>
-    
   );
 }
